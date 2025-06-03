@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Define a codificação de caracteres para o padrão UTF-8 -->
+    <meta charset="UTF-8">
+
+    <!-- Título exibido na aba do navegador -->
+    <title>Tarifas e Perfil Econômico</title>
+
+    <!-- Importa o arquivo de estilo CSS -->
+    <link rel="stylesheet" href="css_titanic/style_titanic.css">
+
+    <!-- Importa a biblioteca Chart.js para gerar gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <!-- Navegação entre as páginas do projeto -->
+    <nav class="menu-navegacao">
+        <a href="index_titanic.html"><button>🏠 Início</button></a>
+        <a href="pagina1.html"><button>🧍 Sobreviventes</button></a>
+        <a href="pagina2.html"><button>🎟️ Classes Sociais</button></a>
+    </nav>
+
+    <!-- Título principal da página -->
+    <h1>💰 Análise Econômica</h1>
+
+    <!-- Seção com tabela de dados econômicos por classe -->
+    <section>
+        <h2>Tabela por Classe</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Classe</th>
+                    <th>Média de Tarifa</th>
+                    <th>% Sobreviventes</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-classes">
+                <!-- Este conteúdo será preenchido dinamicamente via JavaScript -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Seção com gráfico da distribuição das tarifas -->
+    <section>
+        <h2>Distribuição de Tarifas</h2>
+        <canvas id="graficoTarifas" width="400" height="200"></canvas>
+    </section>
+
+    <!-- Seção com as cinco tarifas mais altas -->
+    <section>
+        <h2>Top 5 Tarifas Pagas</h2>
+        <ul id="top-tarifas">
+            <!-- Conteúdo inserido via JavaScript -->
+        </ul>
+    </section>
+
+    <!-- Scripts JavaScript que processam os dados e preenchem a página -->
+    <script src="js_titanic/dados.js"></script>
+    <script src="js_titanic/pagina3.js"></script>
+</body>
+
+</html>
